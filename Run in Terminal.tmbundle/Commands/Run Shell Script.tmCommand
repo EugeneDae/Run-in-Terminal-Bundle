@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+# Some common functions
+source "${TM_BUNDLE_PATH}/Support/functions.sh"
+
+# Build executor if running for the first time
+if [ ! -f "${TM_BUNDLE_PATH}/Support/executor.scpt" ] 
+then
+    osacompile -x -o "${TM_BUNDLE_PATH}/Support/executor.scpt" "${TM_BUNDLE_PATH}/Support/executor.applescript"
+fi
+
+# Launch executor
+osascript "${TM_BUNDLE_PATH}/Support/executor.scpt"
+
+# Run everything
+tm_exec "echo -en '\033c'; cd '$(esc_ap "$TM_DIRECTORY")'; time bash '$(esc_ap "$TM_FILEPATH")'; echo -en '\n';"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@R</string>
+	<key>name</key>
+	<string>Run Shell Script</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>uuid</key>
+	<string>61FD7026-142A-44E4-8CB6-D11CE5919DE0</string>
+</dict>
+</plist>
