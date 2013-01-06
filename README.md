@@ -1,6 +1,6 @@
 Run in Terminal (TextMate bundle)
 =======================================================================
-A simple TextMate bundle to run Python, Ruby, PHP, Bash scripts in Terminal.app without stealing focus from the TextMate window. It can easily be modified to run `%YOUR_FAVORITE_LANGUAGE%`. If you added support for a new language, please make a pull request to update this repository or email your changes to the author.
+A simple TextMate 1.5 bundle to run Python, Ruby, PHP, Bash scripts in Terminal.app without stealing focus from the TextMate window. It can easily be modified to run `%YOUR_FAVORITE_LANGUAGE%`. If you added support for a new language, please make a pull request to update this repository or email your changes to the author.
 
 ![](https://raw.github.com/Cyberic/Run-in-Terminal-Bundle/master/screenshot.jpg)
 
@@ -34,4 +34,4 @@ Credits & license
 ------------------------------------------------------------------------
 Written by Eugene ‘Dae’ Zuyev (dae@cyberic.eu).
 
-Any feedback is appreciated. Feel free to use the code under the terms of MIT License (see LICENSE).
+Any feedback is appreciated. Feel free to use the code under the terms of the MIT License (see LICENSE).
