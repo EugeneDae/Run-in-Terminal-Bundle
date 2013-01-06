@@ -23,7 +23,14 @@ The bundle uses AppleScript to create (if necessary) a Terminal.app window runni
 
 For Python projects, the bundle respects `TM_PYTHON` environment variable (if set). If you use virtualenv, set TM_PYTHON to the full path to Python binary inside your virtualenv directory. Note that TextMate does not understand `~/...`, use `/Users/username/...` instead.
 
-Credits & License
+Known problems
+-----------------------------------------------------------------------
+Only tested with TextMate 1.5.11 and Mac OS X 10.8 (“Mountain Lion”).
+
+* Sometimes the “executor” may take up to 30 seconds to initialize while displaying a message saying “New screen”.
+* Bash commands used to run scripts are saved in bash history as if a user typed them.
+
+Credits & license
 ------------------------------------------------------------------------
 Written by Eugene ‘Dae’ Zuyev (dae@cyberic.eu).
 
