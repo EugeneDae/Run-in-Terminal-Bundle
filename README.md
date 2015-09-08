@@ -32,6 +32,6 @@ Only tested with TextMate 1.5.11 and Mac OS X 10.8 (“Mountain Lion”).
 
 Credits & license
 ------------------------------------------------------------------------
-Written by Eugene ‘Dae’ Zuyev (eugene.zuyev@gmail.com).
+Written by Eugene / Dae (dae@dae.me).
 
 Any feedback is appreciated. Feel free to use the code under the terms of the MIT License (see LICENSE).
